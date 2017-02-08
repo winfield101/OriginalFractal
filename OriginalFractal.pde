@@ -1,5 +1,3 @@
-float angle;
-float jitter;
 
 public void setup()
 {
@@ -10,13 +8,8 @@ public void setup()
 }
 public void draw()
 {	background(0);
-	if (second() % 2 == 0) {  
-    jitter = 0.1;
-  }
-  angle = angle + jitter;
-  float c = cos(angle);
   translate(width/2, height/2);
-  rotate(c);
+ 
   myFractal(0,0,500);   
 }
 public void myFractal(int x, int y, int siz)
